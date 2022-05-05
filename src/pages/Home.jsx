@@ -1,9 +1,20 @@
 import React from 'react';
 import Header from '../components/Header';
+import ProductList from '../containers/ProductList';
+
 const Home = () => {
     return (
-       
-        <Header/>
+    <div>
+  <div>
+    <Header/>
+    </div>
+  <div>
+    <ProductList/>
+    </div>
+</div>
+
+
+
     );
 }
 
