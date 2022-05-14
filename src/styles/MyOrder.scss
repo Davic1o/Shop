@@ -2,15 +2,18 @@
 
 .MyOrder {
 	width: 360px;
+	position: fixed;
 	padding: 24px;
 	box-sizing: border-box;
-	position: absolute;
 	right: 0;
 	background-color: var(--white);
 	top: 60px;
-	bottom: auto;
+	bottom: 0;
 	border-radius: 6px;
-	border: 1px solid gray;
+	border: 1px solid var(--very-light-pink);
+	height: 90vh;
+	overflow: auto;
+	animation: swipeDown .50s;
 }
 .title-container {
 	display: flex;
@@ -61,4 +64,11 @@
 	.MyOrder {
 		width: 100%;
 	}
+}
+@keyframes swipeLeft {
+	100% {transform: translateX(-20px);}
+}
+
+.MyOrder::-webkit-scrollbar{
+	display: none;
 }

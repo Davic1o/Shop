@@ -5,6 +5,11 @@ nav {
 	justify-content: space-between;
 	padding: 0 24px;
 	border-bottom: 1px solid var(--very-light-pink);
+	width: calc(100% - 48px);
+	top: 0;
+	position: fixed;
+	background-color: #fff;
+	overflow: auto;
 }
 .menu {
 	display: none;
@@ -62,6 +67,8 @@ nav {
 	justify-content: center;
 	align-items: center;
 }
+
+
 @media (max-width: 640px) {
 	.menu {
 		display: block;
@@ -72,4 +79,8 @@ nav {
 	.navbar-email {
 		display: none;
 	}
-}
+	.menu :hover{
+		cursor: pointer;
+	}
+	}
+

@@ -1,0 +1,42 @@
+@import 'vars';
+
+   .mobile-menu {
+	width: 360px;
+	position: fixed;
+	padding: 24px;
+	box-sizing: border-box;
+	left: 0;
+	background-color: var(--white);
+	top: 60px;
+	bottom: 0;
+	border-radius: 6px;
+	border: 1px solid var(--very-light-pink);
+	height: 90vh;
+	overflow: auto;
+	animation: swipeDown .50s;
+    }
+    .mobile-menu a {
+      text-decoration: none;
+      color: var(--black);
+      font-weight: bold;
+      /* margin-bottom: 24px; */
+    }
+    .mobile-menu ul {
+      padding: 0;
+      margin: 24px 0 0;
+      list-style: none;
+    }
+    .mobile-menu ul:nth-child(1) {
+      border-bottom: 1px solid var(--very-light-pink);
+    }
+    .mobile-menu ul li {
+      margin-bottom: 24px;
+    }
+    .email {
+      font-size: var(--sm);
+      font-weight: 300 !important;
+    }
+    .sign-out {
+      font-size: var(--sm);
+      color: var(--hospital-green) !important;
+    }
